@@ -79,6 +79,7 @@
 
 .icOpenGallery {
   width: 30px;
+  cursor: pointer;
   height: 30px;
   margin-left: 10px;
 }
@@ -92,6 +93,7 @@
 }
 
 .icOpenSticker {
+  cursor: pointer;
   width: 30px;
   height: 30px;
   margin-left: 5px;
@@ -99,6 +101,7 @@
 }
 
 .icSend {
+  cursor: pointer;
   width: 30px;
   height: 30px;
   margin-left: 5px;

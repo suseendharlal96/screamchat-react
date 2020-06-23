@@ -6,15 +6,15 @@ import authCredentials from "../Auth/AuthCredentials";
 import ChatBox from "../ChatBox/ChatBox";
 import Welcome from "../Welcome/Welcome";
 const Chat = (props) => {
-  const [currentUser, setCurrentUser] = useState("");
   const [currentPeerUser, setCurrentPeerUser] = useState("");
+  const [currentUser, setCurrentUser] = useState("");
   const [currentUserId, setCurrentUserId] = useState("");
+  const [currentUserPic, setcurrentUserPic] = useState("");
+  const [currentUserFbaseId, setcurrentUserFbaseId] = useState("");
   const [loading, setloading] = useState(false);
   const [notifications, setnotifications] = useState([]);
   const [notificationsRemoved, setnotificationRemoved] = useState([]);
   const [currentUserMsg, setcurrentUserMsg] = useState([]);
-  const [currentUserPic, setcurrentUserPic] = useState("");
-  const [currentUserFbaseId, setcurrentUserFbaseId] = useState("");
   const [searchUsers, setsearchUsers] = useState([]);
   const [contacts, setContacts] = useState(null);
 
@@ -275,7 +275,10 @@ const Chat = (props) => {
         </div>
         <div className="viewBoard">
           {currentPeerUser ? (
-            <ChatBox />
+            <ChatBox
+              currentPeerUser={currentPeerUser}
+              showToast={props.showToast}
+            />
           ) : (
             <Welcome username={currentUser} profilePic={currentUserPic} />
           )}

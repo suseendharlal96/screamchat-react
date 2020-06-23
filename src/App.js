@@ -7,6 +7,8 @@ import Home from "./pages/Home/Home";
 import Chat from "./pages/Chat/Chat";
 import Profile from "./pages/Profile/Profile";
 import Auth from "./pages/Auth/Auth";
+import "react-toastify/dist/ReactToastify.css";
+
 import firebase from "./services/firebase";
 import "./App.css";
 

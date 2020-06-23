@@ -9,7 +9,7 @@ const Header = () => {
       <div className="header-limiter">
         <h1>
           <Link to="/">
-            Scream<span>Chat</span>
+            Screamer<span>Chat</span>
           </Link>
         </h1>
         <nav>
